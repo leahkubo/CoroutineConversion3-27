@@ -30,9 +30,6 @@ class MainActivity : AppCompatActivity() {
 
         val scope = CoroutineScope(Job() + Dispatchers.Default)
 
-        scope.launch {
-
-        }
 
         findViewById<Button>(R.id.revealButton).setOnClickListener{
             scope.launch{
